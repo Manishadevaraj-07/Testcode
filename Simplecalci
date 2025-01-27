@@ -1,0 +1,30 @@
+#include<stdio.h>
+void simpleCalci(char op)
+{
+    int num1,num2;
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+    switch(op)
+    {
+        case '+':
+        printf("%d",num1+num2);
+        break;
+        case '-':
+        printf("%d",num1-num2);
+        break;
+        case '*':
+        printf("%d",num1*num2);
+        break;
+        case '/':
+        printf("%d",num1/num2);
+        break;
+    }
+}
+int main()
+{
+    char op;
+    printf("Enter operation to perform:");
+    scanf("%c",&op);
+    simpleCalci(op);
+    return 0;
+}
